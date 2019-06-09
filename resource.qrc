@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>Images/add.png</file>
+        <file>Images/checkbox-checked.png</file>
+        <file>Images/checkbox-unchecked.png</file>
+        <file>Images/delete.png</file>
+        <file>Images/network-connect.tiff</file>
+        <file>Images/network-disconnect.tiff</file>
+        <file>Images/remove.png</file>
+        <file>Images/run.png</file>
+        <file>Images/setting.png</file>
+        <file>Images/stop.png</file>
+        <file>Images/HouseLensLogo.png</file>
+        <file>Images/HouseLensText.png</file>
+        <file>Images/appicon.png</file>
+        <file>Images/search_shootTitle.png</file>
+    </qresource>
+</RCC>

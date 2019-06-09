@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VideoEditWidget</class>
+ <widget class="QWidget" name="VideoEditWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1034</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>10</width>
+    <height>10</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>9750</width>
+    <height>10000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Please edit video</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(52, 148, 207, 230);</string>
+  </property>
+  <widget class="QWidget" name="widgetEidt" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>960</width>
+     <height>470</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>960</width>
+     <height>470</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(31, 138, 203, 230);</string>
+   </property>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>400</y>
+      <width>960</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(31, 138, 203, 230);
+border-color: rgb(177, 177, 177);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QComboBox" name="cmboMusic">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>40</y>
+       <width>441</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QComboBox {
+     border: 1px solid rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
+}</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblRemove">
+     <property name="geometry">
+      <rect>
+       <x>179</x>
+       <y>12</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Remove</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblSettings">
+     <property name="geometry">
+      <rect>
+       <x>79</x>
+       <y>12</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Settings:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ldtCutSecond">
+     <property name="geometry">
+      <rect>
+       <x>249</x>
+       <y>13</y>
+       <width>31</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhNone</set>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="maxLength">
+      <number>2</number>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Normal</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblContents">
+     <property name="geometry">
+      <rect>
+       <x>286</x>
+       <y>12</y>
+       <width>341</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>8</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>second from front and back of each video clip</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblSettings_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Background Music:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCancel">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>40</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+color: rgb(0, 0, 0);
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(243, 243, 243, 255), stop:1 rgba(191, 191, 191, 255));
+border:none;
+border-radius: 3px;
+}
+
+QPushButton:hover {
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(210, 243, 243, 255), stop:1 rgba(191, 191, 191, 255));
+border:none;
+border-radius: 3px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnProceed">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>40</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+color: rgb(0, 0, 0);
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(243, 243, 243, 255), stop:1 rgba(191, 191, 191, 255));
+border:none;
+border-radius: 3px;
+}
+
+QPushButton:hover {
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(210, 243, 243, 255), stop:1 rgba(191, 191, 191, 255));
+border:none;
+border-radius: 3px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Proceed</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>50</y>
+      <width>661</width>
+      <height>271</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widgetPlay" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>490</y>
+     <width>960</width>
+     <height>470</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(31, 138, 203, 230);</string>
+   </property>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>659</x>
+      <y>0</y>
+      <width>301</width>
+      <height>470</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <widget class="QPushButton" name="btnPlayWidgetCancel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>430</y>
+       <width>271</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+color: rgb(0, 0, 0);
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(243, 243, 243, 255), stop:1 rgba(191, 191, 191, 255));
+border:none;
+border-radius: 3px;
+}
+
+QPushButton:hover {
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(210, 243, 243, 255), stop:1 rgba(191, 191, 191, 255));
+border:none;
+border-radius: 3px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnReEdit">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>280</y>
+       <width>271</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+color: rgb(0, 0, 0);
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(243, 243, 243, 255), stop:1 rgba(191, 191, 191, 255));
+border:none;
+border-radius: 3px;
+}
+
+QPushButton:hover {
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(210, 243, 243, 255), stop:1 rgba(191, 191, 191, 255));
+border:none;
+border-radius: 3px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Re-edit</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnUploadOnlyVideo">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>330</y>
+       <width>271</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+color: rgb(0, 0, 0);
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(243, 243, 243, 255), stop:1 rgba(191, 191, 191, 255));
+border:none;
+border-radius: 3px;
+}
+
+QPushButton:hover {
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(210, 243, 243, 255), stop:1 rgba(191, 191, 191, 255));
+border:none;
+border-radius: 3px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Upload Just Video Clips</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnUploadAllVideo">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>380</y>
+       <width>271</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+color: rgb(0, 0, 0);
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(243, 243, 243, 255), stop:1 rgba(191, 191, 191, 255));
+border:none;
+border-radius: 3px;
+}
+
+QPushButton:hover {
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(210, 243, 243, 255), stop:1 rgba(191, 191, 191, 255));
+border:none;
+border-radius: 3px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Upload All Video Clips</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnPlay">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>440</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: rgb(0, 0, 0);
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(243, 243, 243, 255), stop:1 rgba(191, 191, 191, 255));
+border:none;
+border-radius: 3px;
+}
+
+QPushButton:hover {
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(210, 243, 243, 255), stop:1 rgba(191, 191, 191, 255));
+border:none;
+border-radius: 3px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/image/Images/run.png</normaloff>:/image/Images/run.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnStop">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>440</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: rgb(0, 0, 0);
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(243, 243, 243, 255), stop:1 rgba(191, 191, 191, 255));
+border:none;
+border-radius: 3px;
+}
+
+QPushButton:hover {
+background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(210, 243, 243, 255), stop:1 rgba(191, 191, 191, 255));
+border:none;
+border-radius: 3px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/image/Images/stop.png</normaloff>:/image/Images/stop.png</iconset>
+    </property>
+   </widget>
+   <widget class="VlcWidgetSeek" name="vlcSeek" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>390</y>
+      <width>651</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="VlcWidgetVideo" name="vlcPlayer" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>651</width>
+      <height>387</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>VlcWidgetSeek</class>
+   <extends>QWidget</extends>
+   <header location="global">VLCQtWidgets/WidgetSeek.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>VlcWidgetVideo</class>
+   <extends>QWidget</extends>
+   <header location="global">VLCQtWidgets/WidgetVideo.h</header>
+   <container>1</container>
+   <slots>
+    <signal>fullscreen()</signal>
+    <slot>toggleFullscreen()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
